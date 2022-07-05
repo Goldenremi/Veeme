@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Veeme</title>
+		<link rel="stylesheet" href="./style.css" />
+		<style type="text/css">
+			.hide {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="loading" class=" loading">
+			<section class="loading-content">
+				<p class="loading-brand-name">Veeme</p>
+				<div class="loading-icon-wrapper">
+					<img class="loading-icon" src="../source/photos/icon.png" alt="" />
+				</div>
+				<p class="loading-welcome-message">Sing, lets reiew</p>
+			</section>
+			<div class="loading-bar">a</div>
+			<article id="change">
+				<button data-location="#loading" data-destination="#landing">
+					Forward</button
+				><button data-location="#loading" data-destination="#searching">
+					Back
+				</button>
+			</article>
+		</section>
+		<section id="landing" class="hide landing">
+			<div class="landing-icon-wrapper">
+				<img class="landing-icon" src="../source/photos/icon.png" alt="" />
+			</div>
+			<div>carousel</div>
+			<p class="landing-message">We bring your music to the world</p>
+			<button>Get Started</button>
+			<p class="landing-login">
+				Already have an account? sign in <span>here</span>
+			</p>
+			<article id="change">
+				<button data-location="#landing" data-destination="#signin">
+					Forward</button
+				><button data-location="#landing" data-destination="#loading">
+					Back
+				</button>
+			</article>
+		</section>
+		<section id="signin" class="hide signin">
+			<header class="signin-header">
+				<div class="signin-icon-wrapper">
+					<img class="signin-icon" src="../source/photos/icon.png" alt="" />
+				</div>
+				<span class="signin-header-text">Sign in info</span>
+			</header>
+			<main class="signin-content">
+				<form action="" class="signin-form">
+					<label for="username">Create username:</label>
+					<input id="username" type="text" />
+					<label for="first-name">First Name:</label>
+					<input id="first-name" type="text" />
+					<label for="last-name">Last Name:</label>
+					<input id="last-name" type="text" />
+					<label for="email">Email:</label>
+					<input id="email" type="email" />
+					<p>Sex:</p>
+					<div class="sex-radio-wrapper">
+						<label for="male">Male</label>
+						<input id="male" value="" name="sex" type="radio" />
+						<label for="female">Female</label>
+						<input id="female" value="" name="sex" type="radio" />
+						<label for="rather-not-say">Rather not say</label>
+						<input id="rather-not-say" value="" name="sex" type="radio" />
+					</div>
+					<label for="date">Date of Birth:</label>
+					<input id="date" type="date" />
+					<label for="address">Home Address:</label>
+					<input id="address" type="text" />
+					<label for="phone-number">Phone Number:</label>
+					<input id="phone-number" type="text" />
+
+					<label for="password">Create password:</label>
+					<input id="password" type="text" />
+					<label for="confirm-password">Confirm Password:</label>
+					<input id="confirm-password" type="text" />
+					<button>Create Account</button>
+				</form>
+				<p class="signin-message">
+					Already have an account? sign in <span>here</span>
+				</p>
+			</main>
+			<article id="change">
+				<button data-location="#signin" data-destination="#login">
+					Forward</button
+				><button data-location="#signin" data-destination="#landing">
+					Back
+				</button>
+			</article>
+		</section>
+		<section id="login" class="hide login">
+			<header class="login-header">
+				<div class="login-icon-wrapper">
+					<img class="login-icon" src="../source/photos/icon.png" alt="" />
+				</div>
+				<span class="login-header-text">Sign in info</span>
+			</header>
+			<main class="login-content">
+				<form action="" class="login-form">
+					<label for="username">Username:</label>
+					<input id="username" type="text" />
+					<label for="password">Password:</label>
+					<input id="password" type="text" />
+					<button>Login</button>
+					<p class="login-form-forgot-password">Forgot Password?</p>
+				</form>
+				<p class="login-message">
+					Don't have an account? sign up <span>here</span>
+				</p>
+			</main>
+			<article id="change">
+				<button data-location="#login" data-destination="#searching">
+					Forward</button
+				><button data-location="#login" data-destination="#signin">
+					Back
+				</button>
+			</article>
+		</section>
+
+		<section id="homepage" class="hide homepage">
+			<header class="homepage-header">
+				<div class="homepage-sidebar-icon-wrapper">
+					<img class="homepage-sidebar-icon" src="../source/photos/icon.png" />
+				</div>
+				<div class="homepage-search-wrapper">
+					<input type="search" placeholder="Search" />
+					<img
+						class="homepage-search-icon"
+						src="../source/photos/icon.png"
+					/>
+				</div>
+				<div class="homepage-notification-icon-wrapper">
+					<img class="homepage-notification-icon" src="../source/photos/icon.png" />
+				</div>
+			</header>
+		</section>
+		<section id="searching" class="hide">searching</section>
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>
