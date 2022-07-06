@@ -13,11 +13,11 @@
 		</style>
 	</head>
 	<body>
-		<section id="loading" class=" loading">
+		<section id="loading" class="hide loading">
 			<section class="loading-content">
 				<p class="loading-brand-name">Veeme</p>
 				<div class="loading-icon-wrapper">
-					<img class="loading-icon" src="../source/photos/icon.png" alt="" />
+					<img class="loading-icon" src="./icon.png" alt="" />
 				</div>
 				<p class="loading-welcome-message">Sing, lets reiew</p>
 			</section>
@@ -32,7 +32,7 @@
 		</section>
 		<section id="landing" class="hide landing">
 			<div class="landing-icon-wrapper">
-				<img class="landing-icon" src="../source/photos/icon.png" alt="" />
+				<img class="landing-icon" src="./icon.png" alt="" />
 			</div>
 			<div>carousel</div>
 			<p class="landing-message">We bring your music to the world</p>
@@ -51,7 +51,7 @@
 		<section id="signin" class="hide signin">
 			<header class="signin-header">
 				<div class="signin-icon-wrapper">
-					<img class="signin-icon" src="../source/photos/icon.png" alt="" />
+					<img class="signin-icon" src="./icon.png" alt="" />
 				</div>
 				<span class="signin-header-text">Sign in info</span>
 			</header>
@@ -102,7 +102,7 @@
 		<section id="login" class="hide login">
 			<header class="login-header">
 				<div class="login-icon-wrapper">
-					<img class="login-icon" src="../source/photos/icon.png" alt="" />
+					<img class="login-icon" src="./icon.png" alt="" />
 				</div>
 				<span class="login-header-text">Sign in info</span>
 			</header>
@@ -120,30 +120,210 @@
 				</p>
 			</main>
 			<article id="change">
-				<button data-location="#login" data-destination="#searching">
+				<button data-location="#login" data-destination="#homepage">
 					Forward</button
-				><button data-location="#login" data-destination="#signin">
-					Back
-				</button>
+				><button data-location="#login" data-destination="#signin">Back</button>
 			</article>
 		</section>
 
 		<section id="homepage" class="hide homepage">
 			<header class="homepage-header">
 				<div class="homepage-sidebar-icon-wrapper">
-					<img class="homepage-sidebar-icon" src="../source/photos/icon.png" />
+					<img class="homepage-sidebar-icon" src="./icon.png" />
 				</div>
 				<div class="homepage-search-wrapper">
 					<input type="search" placeholder="Search" />
-					<img
-						class="homepage-search-icon"
-						src="../source/photos/icon.png"
-					/>
+					<img class="homepage-search-icon" src="./icon.png" />
 				</div>
 				<div class="homepage-notification-icon-wrapper">
-					<img class="homepage-notification-icon" src="../source/photos/icon.png" />
+					<img class="homepage-notification-icon" src="./icon.png" />
 				</div>
 			</header>
+			<main class="homepage-main">
+				<p class="homepage-genre-title">Music Genre</p>
+				<section class="homepage-genre">
+					<button class="homepage-genre-scroll-wrapper">
+						<img class="homepage-sidebar-icon" src="./icon.png" />
+					</button>
+					<button>Afrobeat</button>
+					<button>Afrobeat</button>
+					<button>Afrobeat</button>
+					<button>Afrobeat</button>
+					<button>Afrobeat</button>
+					<button>Afrobeat</button>
+					<button>Afrobeat</button>
+				</section>
+				<section class="homepage-posts">
+					<section class="homepage-post">
+						<div class="homepage-profile-picture-wrapper">
+							<img class="homepage-sidebar-icon" src="./icon.png" />
+						</div>
+						<p class="homepage-name_username">
+							Esther Bole<span>@esther323</span>
+						</p>
+						<button class="homepage-follow-button">Follow</button>
+						<div class="homepage-post-options">
+							<img class="homepage-sidebar-icon" src="./icon.png" />
+						</div>
+						<p class="homepage-post-duration">2 mins ago</p>
+						<p class="homepage-post-text">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Temporibus sequi rerum, tenetur corporis, quos nam facere quisquam
+							inventore molestias eligendi cupiditate, fugiat voluptates, totam
+							qui dignissimos. Quae, harum eius similique.
+						</p>
+						<section class="homepage-post-music">
+							<div class="homepage-post-music-audio-icon">
+								<img class="homepage-sidebar-icon" src="./icon.png" />
+							</div>
+							<div>
+								<p>Overload</p>
+								<p>Lado</p>
+								<p>05:17.7.6mb</p>
+							</div>
+							<div class="homepage-post-music-play_pause-icon">
+								<img class="homepage-sidebar-icon" src="./icon.png" />
+							</div>
+						</section>
+						<div class="homepage-post-likes">
+							<div class="homepage-post-likes-icon-wrapper">
+								<img class="homepage-sidebar-icon" src="./icon.png" />
+							</div>
+							<p>10.1k</p>
+						</div>
+						<div class="homepage-post-comments">
+							<div class="homepage-post-comments-icon-wrapper">
+								<img class="homepage-sidebar-icon" src="./icon.png" />
+							</div>
+							<p>10.1k</p>
+						</div>
+					</section>
+				</section>
+			</main>
+			<article id="change">
+				<button data-location="#homepage" data-destination="#genre">
+					Forward</button
+				><button data-location="#homepage" data-destination="#login">
+					Back
+				</button>
+			</article>
+		</section>
+		<section id="genre" class="genre">
+			<header class="genre-header">
+				<div class="genre-back-icon-wrapper">
+					<img class="" src="./icon.png" alt="" />
+				</div>
+				<p class="genre-header-text">Afro beat sound</p>
+			</header>
+			<section class="genre-tools">
+				<form action="">
+					<select name="genre-posts-sort" id="genre-posts-sort">
+						<option value="Recent">Recent</option>
+						<option value="Most liked">Most Liked</option>
+					</select>
+				</form>
+				<div class="genre-tools-div">
+					<p>Artiste mode</p>
+					<div class="genre-add-post-icon">
+						<img class="" src="./icon.png" alt="" />
+					</div>
+					<p>
+						Post something<span class="genre-tools-span"
+							>Maximun of three posts per week</span
+						>
+					</p>
+				</div>
+			</section>
+			<section class="homepage-posts">
+				<section class="homepage-post">
+					<div class="homepage-profile-picture-wrapper">
+						<img class="homepage-sidebar-icon" src="./icon.png" />
+					</div>
+					<p class="homepage-name_username">
+						Esther Bole<span>@esther323</span>
+					</p>
+					<button class="homepage-follow-button">Follow</button>
+					<div class="homepage-post-options">
+						<img class="homepage-sidebar-icon" src="./icon.png" />
+					</div>
+					<p class="homepage-post-duration">2 mins ago</p>
+					<p class="homepage-post-text">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+						sequi rerum, tenetur corporis, quos nam facere quisquam inventore
+						molestias eligendi cupiditate, fugiat voluptates, totam qui
+						dignissimos. Quae, harum eius similique.
+					</p>
+					<section class="homepage-post-music">
+						<div class="homepage-post-music-audio-icon">
+							<img class="homepage-sidebar-icon" src="./icon.png" />
+						</div>
+						<div>
+							<p>Overload</p>
+							<p>Lado</p>
+							<p>05:17.7.6mb</p>
+						</div>
+						<div class="homepage-post-music-play_pause-icon">
+							<img class="homepage-sidebar-icon" src="./icon.png" />
+						</div>
+					</section>
+					<div class="homepage-post-likes">
+						<div class="homepage-post-likes-icon-wrapper">
+							<img class="homepage-sidebar-icon" src="./icon.png" />
+						</div>
+						<p>10.1k</p>
+					</div>
+					<div class="homepage-post-comments">
+						<div class="homepage-post-comments-icon-wrapper">
+							<img class="homepage-sidebar-icon" src="./icon.png" />
+						</div>
+						<p>10.1k</p>
+					</div>
+				</section>
+			</section>
+			<article id="change">
+				<button data-location="#genre" data-destination="#profile">
+					Forward</button
+				><button data-location="#genre" data-destination="#homepage">
+					Back
+				</button>
+			</article>
+		</section>
+		<section id="profile" class="hide profile">
+			<header class="profile-header">
+				<div class="profile-back-icon-wrapper">
+					<img class="" src="./icon.png" alt="" />
+				</div>
+				<p class="profile-header-text">My Profile</p>
+			</header>
+			<main>
+				<form>
+					<section class="profile-header">
+						<div class="profile-picture-wrapper">
+							<img class="" src="./icon.png" alt="" />
+						</div>
+						<p class="profile-username">
+							Username: <input disabled type="text" value="Lado" />
+						</p>
+					</section>
+					<section class="profile-section">
+						<p class="profile-section-header">About:</p>
+						<input
+							class="profile-section-details"
+							disabled
+							type="text"
+							value="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nobis, qui. Repellat nisi animi neque quaerat totam aliquam cumque perspiciatis aspernatur id nulla vitae nam illo, earum, eos obcaecati amet."
+						/>
+					</section>
+					<button class="profile-edit-button">Edit</button>
+				</form>
+			</main>
+			<article id="change">
+				<button data-location="#profile" data-destination="#searching">
+					Forward</button
+				><button data-location="#profile" data-destination="#genre">
+					Back
+				</button>
+			</article>
 		</section>
 		<section id="searching" class="hide">searching</section>
 		<script type="text/javascript" src="./script.js"></script>
